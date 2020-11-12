@@ -1,0 +1,10 @@
+bootstrap_expect   = 3
+client_addr        = "0.0.0.0"
+bind_addr          = "{{ GetInterfaceIP \"enp0s8\" }}"
+data_dir           = "/opt/consul"
+datacenter         = "east"
+log_level          = "INFO"
+server             = true
+ui                 = true
+non_voting_server  = false
+retry_join         = ["192.168.178.31", "192.168.178.32", "192.168.178.33"]
